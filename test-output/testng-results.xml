@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-21T11:36:22 EDT" name="Default suite" finished-at="2023-06-21T11:37:05 EDT" duration-ms="43407">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.allrunners.TestRunner@515c6049]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-06-21T11:36:22 EDT" name="Default test" finished-at="2023-06-21T11:37:05 EDT" duration-ms="43407">
+      <class name="com.automation.allrunners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.automation.allrunners.TestRunner@515c6049]" started-at="2023-06-21T11:36:22 EDT" name="setUpClass" finished-at="2023-06-21T11:36:23 EDT" duration-ms="748" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@733fa95c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.allrunners.TestRunner@515c6049]" started-at="2023-06-21T11:36:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T11:36:31 EDT" duration-ms="8527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with correct credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.allrunners.TestRunner@515c6049]" started-at="2023-06-21T11:36:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T11:36:36 EDT" duration-ms="4810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid username and no password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.allrunners.TestRunner@515c6049]" started-at="2023-06-21T11:36:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T11:36:45 EDT" duration-ms="9223" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test remember username box is checkbox"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.automation.pages.homepage.HomePage.clickOnUserProfileName()" because "this.home" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.automation.pages.homepage.HomePage.clickOnUserProfileName()" because "this.home" is null
+at com.automation.allstepsdefs.LoginStepDefinition.click_on_user_menu_dropodown(LoginStepDefinition.java:175)
+at ✽.click on user menu dropodown(file:///C:/Users/knand/Desktop/JavaBasicAdvanced/SalesforceCucumberFramework2/src/test/resources/features/salesforcelogin.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.allrunners.TestRunner@515c6049]" started-at="2023-06-21T11:36:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T11:36:48 EDT" duration-ms="2515" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test forgot password 4A"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.automation.pages.login.ForgotYourPasswordPage.enterUsernameOnForgotPasswordLink(String)" because "this.foryourPassswordPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.automation.pages.login.ForgotYourPasswordPage.enterUsernameOnForgotPasswordLink(String)" because "this.foryourPassswordPage" is null
+at com.automation.allstepsdefs.LoginStepDefinition.user_enter_a_username(LoginStepDefinition.java:206)
+at ✽.User enters value into text box username field as "<username1>"(file:///C:/Users/knand/Desktop/JavaBasicAdvanced/SalesforceCucumberFramework2/src/test/resources/features/salesforcelogin.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.allrunners.TestRunner@515c6049]" started-at="2023-06-21T11:36:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-21T11:37:04 EDT" duration-ms="16431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test forgot password 4B"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.automation.allrunners.TestRunner@515c6049]" started-at="2023-06-21T11:37:04 EDT" name="tearDownClass" finished-at="2023-06-21T11:37:05 EDT" duration-ms="1108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.automation.allrunners.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
